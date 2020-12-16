@@ -1,2 +1,3 @@
-# docker-laravel-nuxt
-# docker-laravel-nuxt
+# 前提
+フロント側にNuxt.js,
+バックエンドをAPIとしてlaravelで作成
