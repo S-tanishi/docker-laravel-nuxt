@@ -3,11 +3,20 @@ volumes:
   php-fpm-socket:
   db-store:
 services:
-  app:
-    build: ./docker/php
+  api:
+    build: ./docker/api
     volumes:
       - php-fpm-socket:/var/run/php-fpm
       - ./backend:/work/backend
+  
+  ui:
+    build: ./docker/ui/Dockerfile
+    volumes: 
+      - ./ui:/app 
+    depends_on: 
+      - api 
+    link: 
+      - api 
 
   web:
     build: ./docker/nginx
