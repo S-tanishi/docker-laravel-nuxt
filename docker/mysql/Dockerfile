@@ -1,7 +1,7 @@
 
 FROM mysql:8.0
 
-ENV TZ=UTC \
+ENV TZ=Asia/Tokyo \
   MYSQL_DATABASE=docker \
   MYSQL_USER=docker \
   MYSQL_PASSWORD=secret \
