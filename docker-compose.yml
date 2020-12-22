@@ -12,7 +12,7 @@ services:
   ui:
     build: ./docker/ui
     volumes: 
-      - ./ui:/app 
+      - ./frontend:/work/frontend
     tty: true
     depends_on: 
       - api 
