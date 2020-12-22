@@ -16,7 +16,7 @@ services:
     tty: true
     depends_on: 
       - api 
-    link: 
+    links:  
       - api 
 
   web:
