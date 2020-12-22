@@ -13,6 +13,12 @@ services:
     build: ./docker/ui
     volumes: 
       - ./frontend:/work/frontend
+    environment: 
+      PORT: '3000'
+      HOST: '0.0.0.0'
+      BASE_URL: 'http://nginx'
+    ports: 
+      - 3000:3000
     tty: true
     depends_on: 
       - api 
