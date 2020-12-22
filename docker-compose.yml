@@ -10,7 +10,7 @@ services:
       - ./backend:/work/backend
   
   ui:
-    build: ./docker/ui/Dockerfile
+    build: ./docker/ui
     volumes: 
       - ./ui:/app 
     depends_on: 
