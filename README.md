@@ -1,10 +1,15 @@
+### 前提
+フロント側にNuxt.js,バックエンドをAPIとしてlaravelで作成
+
 ### backend
+install laravelX.X
+
 ```
 # Install the latest Laravel project
 $ make create-project
 
 $ make install-recommend-packages 
-
+```
 or
 ```
 $ docker-compose exec app bash
@@ -29,3 +34,4 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
+
