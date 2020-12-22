@@ -13,6 +13,7 @@ services:
     build: ./docker/ui
     volumes: 
       - ./ui:/app 
+    tty: true
     depends_on: 
       - api 
     link: 
