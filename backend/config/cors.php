@@ -19,7 +19,9 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => ['
+        http://web', // 追記
+    ],
 
     'allowed_origins_patterns' => [],
 
